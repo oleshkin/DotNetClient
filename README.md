@@ -8,7 +8,7 @@ The server should also allow any text to be typed in via console (interactive mo
 The client should print out the typed in the server message to the console as it is being typed ("soft real time").
 
 ## Python : Server
-The server is running at port 65432 and is waiting for any clients to be connected. Once a single connection is established, the keyboard listener ([sshkeyboard](https://sshkeyboard.readthedocs.io/en/latest/)) and on each key press just sends the pressed key to the connected client. The console also displays which key was pressed. `Esc` key is used to exit the session.
+The server is running at port 65432 and is waiting for any clients to be connected. Once a single connection is established, the keyboard listener ([sshkeyboard](https://sshkeyboard.readthedocs.io/en/latest/)) is used to catch input and on each key press just sends the pressed key to the connected client. The console also displays which key was pressed. `Esc` key is used to exit the session.
 
 ## .NET : Client
 The client is running on .NET Core 3.1 and connects to the server host via port 65432. Each time something is written into the console, it is being shown in the console. 
