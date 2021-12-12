@@ -61,7 +61,7 @@ Now lets connect to the running server:
 ## Step 5: Run the client in container
 Open a second terminal window, enter the following command:
 
-`docker run -d -it --network=merry-network --name dotnetclient dotnetclient`
+`docker run -it --network=merry-network --name dotnetclient dotnetclient`
 
 ## Step 6: Enjoy!
 If you switch back to the pythonserver terminal window, you should see the client connected msg:
